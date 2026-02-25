@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Fruit Fighters</title>
+
+        <link href="style/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lilita+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p id="debug">debug</p>
+
+        <div id="main-home">
+            <div class="wrapper-center">
+                <p id="home-title" class="bun-g">Fruit Fighters</p>
+                <div class="wrapper-generic">
+                    <div id="game-options" class="wrapper-bg">
+                        <button id="start" class="bun-g">Start</button>
+                    </div>
+                    <div id="home-news" class="wrapper-bg">
+                        <p id="news-title" class="bun-g">News</p>
+                        <span class="pagebreak"></span>
+                        <p id="news-header" class="lil-1">Update: v0.1.0</p>
+                        <p id="news-teaser" class="lil-1">This is a summary of what is going on.</p>
+                        <button id="news-read-more" class="bun-g">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script/phaser.min.js"></script>
+        <script src="script/util/helper.js"></script>
+        <script src="script/util/rarity.js"></script>
+        <script src="script/lib/fruit.js"></script>
+        <script src="script/lib/spawner.js"></script>
+        <script src="script/main.js"></script>
+    </body>
+</html>
