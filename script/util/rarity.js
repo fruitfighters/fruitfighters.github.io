@@ -1,3 +1,5 @@
+import { randomInt } from "./helper";
+
 const rarities = [
     { // common
         threshold: 70, // 1-70
@@ -20,7 +22,7 @@ const rarities = [
     },
 ];
 
-function getFruit() {
+export default function getFruit() {
     const quaziConstant = 20; // 1 in 5 chance to get a bomb
     if (randomInt(1, 100) <= quaziConstant) return "bomb";
 

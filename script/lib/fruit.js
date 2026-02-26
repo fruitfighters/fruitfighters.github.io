@@ -1,4 +1,7 @@
-class Fruit {
+import getFruit from "../util/rarity";
+import { FLAGS } from "../main";
+
+export default class Fruit {
     constructor(game, spawn) {
         this.self = game;
         this.netData = {

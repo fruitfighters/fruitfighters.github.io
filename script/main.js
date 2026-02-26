@@ -1,6 +1,6 @@
-// add hidden feature to make bombs a picture of ayman by typing 'quazi'
+import { Phaser } from "./phaser.min";
 
-const FLAGS = {
+export const FLAGS = {
     basic: {
         startLives: 5,
     },
@@ -58,10 +58,10 @@ const config = {
     },
 };
 
-/**
- * TEMPORARY: this code is commented out to hide the game window during UI development
 const game = new Phaser.Game(config);
-*/
+
+export let fruitGroup = [];
+let spawnerGroup = [];
 
 function preload() {}
 
@@ -88,9 +88,6 @@ function update() {
 
     updateFruitData();
 };
-
-let fruitGroup = [];
-let spawnerGroup = [];
 
 function updateFruitData() {
     for (let i = 0; i < fruitGroup.length; i++) {

@@ -1,4 +1,7 @@
-class Spawner {
+import { randomInt } from "../util/helper";
+import Fruit from "./fruit";
+
+export default class Spawner {
     constructor(game, type, spawnRate, init_x, init_y) {
         this.self = game;
         this.netData = {
